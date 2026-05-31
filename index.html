@@ -7,12 +7,351 @@
 
 <title>Gaming Laptop Landing Page</title>
 
-<link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:black;
+color:white;
+}
+
+
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:black;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:38px;
+color:#00bfff;
+}
+
+
+
+/* NAV BUTTONS */
+
+.nav-buttons{
+display:flex;
+gap:20px;
+}
+
+.nav-buttons a{
+text-decoration:none;
+}
+
+.nav-buttons button{
+
+padding:12px 28px;
+
+background:#111;
+
+border:1px solid #00bfff;
+
+color:white;
+
+font-size:16px;
+
+border-radius:10px;
+
+cursor:pointer;
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h2{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+
+
+/* HERO BUTTONS */
+
+.hero-btns{
+display:flex;
+gap:20px;
+}
+
+.btn1,
+.btn2{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+cursor:pointer;
+}
+
+.btn1{
+background:#00bfff;
+color:black;
+}
+
+.btn2{
+background:#111;
+border:1px solid #00bfff;
+color:white;
+}
+
+
+
+/* VERY SMALL HERO IMAGE */
+
+.hero-image img{
+width:90px;
+}
+
+
+
+/* FEATURES */
+
+.feature-heading{
+text-align:center;
+padding-top:40px;
+}
+
+.feature-heading h2{
+font-size:50px;
+color:#00bfff;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#111;
+padding:30px;
+width:300px;
+border-radius:15px;
+text-align:center;
+}
+
+.card i{
+font-size:40px;
+margin-bottom:20px;
+color:#00bfff;
+}
+
+
+
+/* ABOUT */
+
+.about{
+text-align:center;
+padding:80px 40px;
+}
+
+.about h2{
+font-size:50px;
+margin-bottom:20px;
+color:#00bfff;
+}
+
+.about p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+margin-bottom:30px;
+}
+
+
+
+/* TYPES */
+
+.types{
+padding:80px 60px;
+}
+
+.types h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+color:#00bfff;
+}
+
+.type-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+padding:30px;
+border-radius:20px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+
+
+/* VERY SMALL LAPTOP IMAGES */
+
+.type-image img{
+
+width:80px;
+
+height:50px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+}
+
+
+
+/* TYPE TEXT */
+
+.type-text{
+width:50%;
+}
+
+.type-text h3{
+font-size:40px;
+margin-bottom:20px;
+color:#00bfff;
+}
+
+.type-text p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.type-text h4{
+font-size:28px;
+margin-bottom:25px;
+color:#00ff99;
+}
+
+.type-text button{
+padding:15px 35px;
+background:#00bfff;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+
+
+/* WHY US */
+
+.choose-us{
+padding:80px 60px;
+text-align:center;
+}
+
+.choose-us h2{
+font-size:50px;
+margin-bottom:50px;
+color:#00bfff;
+}
+
+.choose-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.choose-box{
+background:#111;
+padding:30px;
+width:300px;
+border-radius:15px;
+}
+
+
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:80px 20px;
+}
+
+.contact h2{
+font-size:50px;
+margin-bottom:20px;
+color:#00bfff;
+}
+
+.contact p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.contact-btn{
+padding:15px 35px;
+background:#00bfff;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
 </head>
+
 <body>
 
 
@@ -35,7 +374,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <a href="#types"><button>Types</button></a>
 
-<a href="#choose"><button>Why Choose Us</button></a>
+<a href="#choose"><button>Why  Choose Us</button></a>
 
 <a href="#contact"><button>Contact</button></a>
 
@@ -47,7 +386,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -65,13 +404,9 @@ and ultra speed processor.
 
 <div class="hero-btns">
 
-<button class="btn1">
-Buy Now
-</button>
+<button class="btn1">Buy Now</button>
 
-<button class="btn2">
-Explore
-</button>
+<button class="btn2">Explore</button>
 
 </div>
 
@@ -81,7 +416,7 @@ Explore
 
 <div class="hero-image">
 
-<img src="photo3.jpeg" alt="Laptop">
+<img src="laptop.png" alt="Laptop">
 
 </div>
 
@@ -107,9 +442,7 @@ Explore
 
 <h3>Fast Processor</h3>
 
-<p>
-Smooth multitasking performance.
-</p>
+<p>Smooth multitasking performance.</p>
 
 </div>
 
@@ -121,9 +454,7 @@ Smooth multitasking performance.
 
 <h3>Ultra Display</h3>
 
-<p>
-Crystal clear visuals and graphics.
-</p>
+<p>Crystal clear visuals and graphics.</p>
 
 </div>
 
@@ -135,9 +466,7 @@ Crystal clear visuals and graphics.
 
 <h3>Battery Backup</h3>
 
-<p>
-Long battery life for gaming.
-</p>
+<p>Long battery life for gaming.</p>
 
 </div>
 
@@ -165,7 +494,7 @@ Learn More
 
 
 
-<!-- TYPES OF LAPTOPS -->
+<!-- TYPES -->
 
 <section class="types" id="types">
 
@@ -173,13 +502,11 @@ Learn More
 
 
 
-<!-- GAMING LAPTOP -->
-
 <div class="type-row">
 
 <div class="type-image">
 
-<img src="photo4.jpeg" alt="Gaming Laptop">
+<img src="gaming.png" alt="Gaming Laptop">
 
 </div>
 
@@ -187,30 +514,23 @@ Learn More
 
 <h3>Gaming Laptop</h3>
 
-<p>
-High performance laptop specially designed
-for gaming and advanced graphics.
-</p>
+<p>High performance gaming laptop.</p>
 
 <h4>Price : ₹95,000</h4>
 
-<button>
-Special Offers
-</button>
+<button>Special Offers</button>
 
 </div>
 
 </div>
 
 
-
-<!-- BUSINESS LAPTOP -->
 
 <div class="type-row">
 
 <div class="type-image">
 
-<img src="photo5.jpeg" alt="Business Laptop">
+<img src="business.png" alt="Business Laptop">
 
 </div>
 
@@ -218,30 +538,23 @@ Special Offers
 
 <h3>Business Laptop</h3>
 
-<p>
-Professional laptop for office work,
-multitasking and presentations.
-</p>
+<p>Professional office laptop.</p>
 
 <h4>Price : ₹75,000</h4>
 
-<button>
-Special Offers
-</button>
+<button>Special Offers</button>
 
 </div>
 
 </div>
 
 
-
-<!-- STUDENT LAPTOP -->
 
 <div class="type-row">
 
 <div class="type-image">
 
-<img src="photo6.jpeg" alt="Student Laptop">
+<img src="student.png" alt="Student Laptop">
 
 </div>
 
@@ -249,30 +562,23 @@ Special Offers
 
 <h3>Student Laptop</h3>
 
-<p>
-Affordable laptop for students,
-online classes and projects.
-</p>
+<p>Affordable laptop for students.</p>
 
 <h4>Price : ₹45,000</h4>
 
-<button>
-Special Offers
-</button>
+<button>Special Offers</button>
 
 </div>
 
 </div>
 
 
-
-<!-- CREATOR LAPTOP -->
 
 <div class="type-row">
 
 <div class="type-image">
 
-<img src="photo7.jpeg" alt="Creator Laptop">
+<img src="creator.png" alt="Creator Laptop">
 
 </div>
 
@@ -280,16 +586,11 @@ Special Offers
 
 <h3>Creator Laptop</h3>
 
-<p>
-Perfect for video editing,
-graphic design and creativity.
-</p>
+<p>Best laptop for editing and design.</p>
 
 <h4>Price : ₹1,20,000</h4>
 
-<button>
-Special Offers
-</button>
+<button>Special Offers</button>
 
 </div>
 
@@ -299,7 +600,7 @@ Special Offers
 
 
 
-<!-- WHY CHOOSE US -->
+<!-- WHY US -->
 
 <section class="choose-us" id="choose">
 
@@ -311,9 +612,7 @@ Special Offers
 
 <h3>Premium Quality</h3>
 
-<p>
-Best quality laptops with modern technology.
-</p>
+<p>Best quality laptops.</p>
 
 </div>
 
@@ -323,9 +622,7 @@ Best quality laptops with modern technology.
 
 <h3>Affordable Price</h3>
 
-<p>
-Get advanced laptops at reasonable prices.
-</p>
+<p>Advanced laptops at low prices.</p>
 
 </div>
 
@@ -335,9 +632,7 @@ Get advanced laptops at reasonable prices.
 
 <h3>24/7 Support</h3>
 
-<p>
-Friendly customer support anytime.
-</p>
+<p>Customer support anytime.</p>
 
 </div>
 
@@ -369,9 +664,7 @@ Get Started
 
 <footer>
 
-<p>
-© 2026 GameTech. All Rights Reserved.
-</p>
+<p>© 2026 GameTech. All Rights Reserved.</p>
 
 </footer>
 
